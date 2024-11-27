@@ -9,7 +9,7 @@ export default class Post extends React.Component {
   }
   componentDidMount() {
     fetch(
-      `https://gist.githubusercontent.com/mahsa-shm/0550a91d5f73e28e098f51eafaa004f5/raw/7125c64fcf52f8755021cf9c87ee7188048cf5ee/myData.json`
+      `https://gist.githubusercontent.com/mahsa-shm/0550a91d5f73e28e098f51eafaa004f5/raw/87fdeea6e01ed100de4470ce56257c482e8dc1f9/myData.json`
     )
       .then((response) => response.json())
       .then((result) => {
