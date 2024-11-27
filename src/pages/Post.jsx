@@ -9,7 +9,7 @@ export default class Post extends React.Component {
   }
   componentDidMount() {
     fetch(
-      `https://gist.githubusercontent.com/mahsa-shm/0550a91d5f73e28e098f51eafaa004f5/raw/87fdeea6e01ed100de4470ce56257c482e8dc1f9/myData.json`
+      `https://gist.githubusercontent.com/mahsa-shm/0550a91d5f73e28e098f51eafaa004f5/raw/2b51112c032dd2d5cf926c89b2eb5df2b76e04e8/myData.json`
     )
       .then((response) => response.json())
       .then((result) => {
@@ -22,7 +22,7 @@ export default class Post extends React.Component {
   componentDidUpdate(prevProps, prevState) {
     if (prevProps.postId !== this.props.postId) {
       fetch(
-        `https://gist.githubusercontent.com/mahsa-shm/0550a91d5f73e28e098f51eafaa004f5/raw/87fdeea6e01ed100de4470ce56257c482e8dc1f9/myData.json`
+        `https://gist.githubusercontent.com/mahsa-shm/0550a91d5f73e28e098f51eafaa004f5/raw/33e8aceee471c21db1ceb0e08b0c2d8ae41a83a3/myData.json`
       )
         .then((response) => response.json())
         .then((result) => {
