@@ -9,7 +9,7 @@ export default class WithClassComponentTask extends React.Component {
   }
   componentDidMount() {
     const url =
-      "https://gist.githubusercontent.com/mahsa-shm/0550a91d5f73e28e098f51eafaa004f5/raw/33e8aceee471c21db1ceb0e08b0c2d8ae41a83a3/myData.json";
+      "https://gist.githubusercontent.com/mahsa-shm/0550a91d5f73e28e098f51eafaa004f5/raw/87fdeea6e01ed100de4470ce56257c482e8dc1f9/myData.json";
 
     axios
       .get(url)
