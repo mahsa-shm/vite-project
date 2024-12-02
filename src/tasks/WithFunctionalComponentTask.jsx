@@ -6,7 +6,7 @@ const WithFunctionalComponentTask = () => {
   const [data, setData] = useState(null);
 
   const url =
-    "https://gist.githubusercontent.com/mahsa-shm/0550a91d5f73e28e098f51eafaa004f5/raw/2b51112c032dd2d5cf926c89b2eb5df2b76e04e8/myData.json";
+    "https://gist.githubusercontent.com/mahsa-shm/0550a91d5f73e28e098f51eafaa004f5/raw/7d17ff99928d34a21b6a4ed26e025ea147cb11cf/myData.json";
 
   axios
     .get(url)
