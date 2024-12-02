@@ -52,7 +52,7 @@ class MyPost extends React.Component {
   }
   componentDidMount() {
     fetch(
-      `https://gist.githubusercontent.com/mahsa-shm/0550a91d5f73e28e098f51eafaa004f5/raw/2b51112c032dd2d5cf926c89b2eb5df2b76e04e8/myData.json`
+      `https://gist.githubusercontent.com/mahsa-shm/0550a91d5f73e28e098f51eafaa004f5/raw/21ea9b09e6ef79273868a966c901e469a37ed83b/myData.json`
     )
       .then((response) => response.json())
       .then((result) => {
@@ -64,11 +64,11 @@ class MyPost extends React.Component {
         });
       });
   }
+  
   componentDidUpdate(prevProps, prevState) {
-
     if (prevProps.currentPost !== this.props.currentPost) {
       fetch(
-        `https://gist.githubusercontent.com/mahsa-shm/0550a91d5f73e28e098f51eafaa004f5/raw/2b51112c032dd2d5cf926c89b2eb5df2b76e04e8/myData.json`
+        `https://gist.githubusercontent.com/mahsa-shm/0550a91d5f73e28e098f51eafaa004f5/raw/21ea9b09e6ef79273868a966c901e469a37ed83b/myData.json`
       )
         .then((response) => response.json())
         .then((result) => {
@@ -83,7 +83,6 @@ class MyPost extends React.Component {
   }
 
   render() {
-    
     return (
       <>
         {this.state.myPost && (
@@ -98,4 +97,3 @@ class MyPost extends React.Component {
     );
   }
 }
-
