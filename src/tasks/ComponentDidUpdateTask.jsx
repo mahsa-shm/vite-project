@@ -52,7 +52,7 @@ class MyPost extends React.Component {
   }
   componentDidMount() {
     fetch(
-      `https://gist.githubusercontent.com/mahsa-shm/0550a91d5f73e28e098f51eafaa004f5/raw/9a4d525ad45a077512abab9b77dc17e6904e155f/myData.json`
+      `https://gist.githubusercontent.com/mahsa-shm/0550a91d5f73e28e098f51eafaa004f5/raw/89bec490c4bad44f1374f452e108f586b9389fc6/myData.json`
     )
       .then((response) => response.json())
       .then((result) => {
@@ -67,7 +67,7 @@ class MyPost extends React.Component {
   componentDidUpdate(prevProps, prevState) {
     if (prevProps.currentPost !== this.props.currentPost) {
       fetch(
-        `https://gist.githubusercontent.com/mahsa-shm/0550a91d5f73e28e098f51eafaa004f5/raw/9a4d525ad45a077512abab9b77dc17e6904e155f/myData.json`
+        `https://gist.githubusercontent.com/mahsa-shm/0550a91d5f73e28e098f51eafaa004f5/raw/89bec490c4bad44f1374f452e108f586b9389fc6/myData.json`
       )
         .then((response) => response.json())
         .then((result) => {
